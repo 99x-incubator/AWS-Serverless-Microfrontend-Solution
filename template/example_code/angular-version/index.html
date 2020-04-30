@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Version</title>
+  </head>
+  <body>
+    <h2>You are currently in the Angular Version.</h2>
+    <button id="btn-react">Try React</button>
+
+    <script>
+      const btnVersionOne = document.getElementById("btn-react");
+      btnVersionOne.addEventListener("click", () => {
+        document.cookie = "version=react";
+        location.reload();
+      });
+    </script>
+  </body>
+</html>
